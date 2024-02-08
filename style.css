@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#title {
+    background-color: #272D2D;
+    height: 5rem;
+}
+
+h1 {
+    color: #fff;
+    line-height: 5rem;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.choice {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #272D2D;
+}
+
+.choice img {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+#score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 1rem;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score p {
+    font-size: 5rem;
+}
+
+#msg-box {
+    margin-top: 5rem;
+}
+
+#msg-box p {
+    background-color: #272D2D;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width: 600px) {
+    #title {
+        height: 3rem;
+    }
+    h1 {
+        line-height: 3rem;
+    }
+    .choice {
+        height: 6rem;
+        width: 6rem;
+    }
+    .choice img {
+        height: 5rem;
+        width: 5rem;
+    }
+    .score p {
+        font-size: 3rem;
+    }
+    .score h2 {
+        font-size: 1rem;
+    }
+    #msg-box p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    #title {
+        height: 1.5rem;
+    }
+    h1 {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    #choices {
+        gap: 1rem;
+    }
+
+    .choice {
+        height: 4rem;
+        width: 4rem;
+    }
+    .choice img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #score-board {
+        gap: 2rem;
+    }
+
+    .score p {
+        font-size: 2rem;
+    }
+    .score h2 {
+        font-size: 0.5rem;
+    }
+    #msg-box p {
+        font-size: 0.5rem;
+    }
+    #msg-box {
+        margin-top: 3rem;
+    }
+}
